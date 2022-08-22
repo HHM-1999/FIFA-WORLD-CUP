@@ -1,0 +1,22 @@
+ .bodycolor {
+        width: 100%;
+        height: 500%;
+        padding: 90px;
+        
+    }
+.textsize{
+        font-size: 6px;
+        font-family: "Berkshire Swash";
+        font-size: 80px;
+
+    }
+
+
+
+
+.header{
+        padding-left: 10px;
+}
+.active{
+    background-color: gray !important;
+}
