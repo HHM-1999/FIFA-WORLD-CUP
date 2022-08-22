@@ -19,7 +19,7 @@ for (let i = 0; i < items.length; i++) {
             
         }
         else if (count > 5) {
-            alert("limit full");
+            alert("limit fulled . Only 5 number of Player's name are allowed .");
         }
         
         
@@ -28,7 +28,7 @@ for (let i = 0; i < items.length; i++) {
 }
 
 const cal = document.getElementById("cal-btn");
- const expense = document.getElementById("total-amount");
+const expense = document.getElementById("total-amount");
 cal.addEventListener("click", function (e) {
     e.preventDefault();
     const player = document.getElementById("player-amount").value;
@@ -47,23 +47,18 @@ totalcal.addEventListener("click", function (e) {
     e.preventDefault();
     const Manager = document.getElementById("manager").value;
     const managervalue = parseInt(Manager);
-    
-     
     const Coach = document.getElementById("coach").value;
     const coachvalue = parseInt(Coach);
     const expensevalue = parseInt(expense.innerHTML);
     
     function annualbudget(coachvalue, managervalue, expensevalue) {
-    const totalbudget = managervalue + coachvalue + expensevalue;
-    return totalbudget;
+        const totalbudget = managervalue + coachvalue + expensevalue;
+        return totalbudget;
     
     }
     
     const totalannual = annualbudget(managervalue, coachvalue, expensevalue);
-    document.getElementById("total-expense").innerHTML=totalannual;
+    document.getElementById("total-expense").innerHTML = totalannual;
 
-    
-
-
-})
+});
  
